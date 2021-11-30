@@ -1,0 +1,15 @@
+<h1>Listado Heroes</h1>
+
+<ul>
+    <li *ngFor="let heroe of heroes; let i = index">
+        {{ i }} - {{ heroe }}
+    </li>
+</ul>
+
+<button (click)="borrarHeroe()">Borrar</button>
+
+<!-- * las variables con # son referencias locales -->
+
+<div *ngIf="heroeBorrado">
+    <h3>Heroe Borrado: <small>{{ heroeBorrado }}</small></h3>
+</div>
