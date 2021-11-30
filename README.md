@@ -1,3 +1,40 @@
+# Primera Parte (intro)
+
+1. Crear proyectos de Angular
+
+2. Explicar cada archivo y directorio de un proyecto
+
+3. Componentes
+
+4. Módulos
+
+5. One way data binding
+
+6. Uso del AngularCLI - Angular Command Line Interface
+
+7. Directivas creadas por Angular
+
+8. ngIf y ngIf-else
+
+
+# Segunda Parte (proyecto dbz)
+
+1. Profundizar un poco más en los módulos
+
+2. FormsModule
+
+3. ngModel
+
+4. @Inputs
+
+5. @outputs
+
+6. Servicios
+
+7. Métodos en servicios
+
+8. Depuraciones
+
 # Bases
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
