@@ -1,0 +1,18 @@
+<!-- * pipe number -->
+<h3>Agregar <small>{{ nuevo.nombre }} {{ nuevo.poder | number }}</small></h3>
+<hr>
+<!-- * Submit Tradicional -->
+<!-- * nomenclatura oficial: poner signo $ al event -->
+<!-- <form (submit)="agregarTradicional($event)"> -->
+
+<!-- * Submit con FormsModule -->
+<form (ngSubmit)="agregar()">
+    <!-- * cambio tradicional de input con eventos -->
+    <!-- <input type="text" name="" id="" placeholder="Nombre" [value]="nuevo.nombre" (input)="cambiarNombre($event)"> -->
+
+    <!-- * cambio con ngModel -->
+    <!-- el uso de [()] es para escuchar y emitir evento -->
+    <input type="text" name="nombre" id="" placeholder="Nombre" [(ngModel)]="nuevo.nombre">
+    <input type="number" name="poder" id="" placeholder="Poder" [(ngModel)]="nuevo.poder">
+    <button type="submit">Agregar</button>
+</form>
