@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interface';
+import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-personajes',
@@ -8,10 +9,14 @@ import { Personaje } from '../interfaces/dbz.interface';
 })
 export class PersonajesComponent implements OnInit {
   /** @parametro data es un alias para la prop en el child */
-  @Input('alias') personajes: Array<Personaje> = []
-
-  constructor() { }
-
+  // @Input('alias') personajes: Array<Personaje> = []
+  
+  get personajes() {
+    return this._dbzService.personajes;
+  }
+  
+  constructor(private _dbzService: DbzService) { }
+  
   ngOnInit(): void {
   }
 

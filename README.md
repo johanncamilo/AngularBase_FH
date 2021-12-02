@@ -35,6 +35,18 @@
 
 8. Depuraciones
 
+# Tercera Parte (proyecto dbz)
+
+1. Generar build de producción `ng build`
+
+> Option "--prod" is deprecated: No need to use this option as this builder defaults to configuration "production".
+
+2. Desplegarlo rápidamente
+
+3. Netlify
+
+> Aquí aprenderemos como generar el build de producción de nuestra aplicación y la desplegaremos en la web rápidamente usando Netlify, el proceso de despliegue en otros servidores es virtualmente el mismo, tomar nuestra carpeta DIST (que contiene la aplicación con archivos HTML, CSS y JS) y desplegarla mediante FTP (preferiblemente sFTP) en el hosting deseado.
+
 # Bases
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
